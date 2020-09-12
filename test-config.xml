@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Moodle Automation" verbose="1" >
+    <test name="LogInTest" >
+        <classes>
+            <class name="moodle.selenium.testcases.LoginWithValidCredentialTC" />
+            <class name="moodle.selenium.testcases.LoginWithInvalidCredentialTC"></class>
+        </classes>
+    </test>
+</suite>
