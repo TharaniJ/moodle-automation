@@ -15,6 +15,7 @@ public class LogInAutomationSequence {
     public void loginSequences(WebDriver webDriver, String userName, String password) {
 
         try {
+
             HomePage moodleHomePage = PageFactory.initElements(webDriver, HomePage.class);
             moodleHomePage.getLoginLink().click();
             LOGGERS.info("Click log In button ");
