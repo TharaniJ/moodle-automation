@@ -19,9 +19,12 @@ public class DashboardPage {
     @CacheLookup
     private WebElement profileLink;
 
-    public WebElement getProfileLink() {
-        return profileLink;
-    }
+    @FindBy(xpath = "//*[@id='nav-drawer']/nav[2]/ul/li/a/div/div/span[2]")
+    @CacheLookup
+    private WebElement siteAdministrator;
+
+    public WebElement getSiteAdministrator() { return siteAdministrator; }
+    public WebElement getProfileLink() { return profileLink; }
     public WebElement getDashboardLink() { return dashboardLink; }
     public WebElement getLogoutLink() { return logoutLink; }
 }
